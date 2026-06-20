@@ -1,0 +1,6 @@
+# Node.js portable & dependencies
+/nodejs/
+/node_modules/
+
+# Vercel
+.vercel
