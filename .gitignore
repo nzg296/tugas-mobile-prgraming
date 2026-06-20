@@ -4,3 +4,7 @@
 
 # Vercel
 .vercel
+
+# npm artifacts from local Vercel CLI install
+package.json
+package-lock.json
