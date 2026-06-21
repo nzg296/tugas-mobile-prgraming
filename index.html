@@ -8,7 +8,7 @@
 
 <meta
 name="viewport"
-content="width=device-width, initial-scale=1.0">
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <title>
 Come and See Me
@@ -36,6 +36,8 @@ body{
 
 min-height:100vh;
 
+min-height:100dvh;
+
 overflow:hidden;
 
 display:flex;
@@ -44,7 +46,7 @@ justify-content:center;
 
 align-items:center;
 
-padding:40px;
+padding:16px;
 
 color:white;
 
@@ -103,15 +105,17 @@ z-index:-2;
 
 width:900px;
 
-max-width:95%;
+max-width:100%;
 
-max-height:90vh;
+max-height:92vh;
+
+max-height:92dvh;
 
 overflow:auto;
 
-padding:40px;
+padding:24px;
 
-border-radius:28px;
+border-radius:24px;
 
 background:
 
@@ -128,32 +132,34 @@ rgba(0,0,0,.5);
 
 text-align:center;
 
+-webkit-overflow-scrolling:touch;
+
 }
 
 /* COVER */
 
 .cover{
 
-width:260px;
+width:180px;
 
-height:260px;
+height:180px;
 
 object-fit:contain;
 
-padding:12px;
+padding:10px;
 
 background:
 
 rgba(255,255,255,.06);
 
-border-radius:22px;
+border-radius:20px;
 
 box-shadow:
 
 0 0 30px
 rgba(255,255,255,.18);
 
-margin-bottom:30px;
+margin-bottom:20px;
 
 }
 
@@ -161,19 +167,19 @@ margin-bottom:30px;
 
 h1{
 
-font-size:42px;
+font-size:28px;
 
-margin-bottom:8px;
+margin-bottom:6px;
 
 }
 
 .artist{
 
-font-size:18px;
+font-size:14px;
 
 color:#dddddd;
 
-margin-bottom:30px;
+margin-bottom:20px;
 
 }
 
@@ -183,7 +189,7 @@ audio{
 
 width:100%;
 
-margin-bottom:35px;
+margin-bottom:24px;
 
 }
 
@@ -195,19 +201,29 @@ background:
 
 rgba(255,255,255,.05);
 
-padding:30px;
+padding:20px;
 
-border-radius:20px;
+border-radius:18px;
 
-max-height:350px;
+max-height:38vh;
+
+max-height:38dvh;
 
 overflow-y:auto;
 
-line-height:2;
+line-height:1.9;
 
 text-align:center;
 
-font-size:17px;
+font-size:15px;
+
+}
+
+.lyrics h2{
+
+font-size:20px;
+
+margin-bottom:12px;
 
 }
 
@@ -215,7 +231,7 @@ font-size:17px;
 
 .lyrics::-webkit-scrollbar{
 
-width:8px;
+width:6px;
 
 }
 
@@ -229,9 +245,159 @@ border-radius:20px;
 
 footer{
 
-margin-top:35px;
+margin-top:24px;
 
 opacity:.8;
+
+font-size:13px;
+
+}
+
+/* TABLET */
+
+@media(min-width:640px){
+
+body{
+
+padding:24px;
+
+}
+
+.container{
+
+padding:32px;
+
+max-width:95%;
+
+}
+
+.cover{
+
+width:220px;
+
+height:220px;
+
+}
+
+h1{
+
+font-size:36px;
+
+}
+
+.artist{
+
+font-size:16px;
+
+}
+
+.lyrics{
+
+padding:26px;
+
+font-size:16px;
+
+max-height:42vh;
+
+max-height:42dvh;
+
+}
+
+.lyrics h2{
+
+font-size:22px;
+
+}
+
+}
+
+/* DESKTOP */
+
+@media(min-width:1024px){
+
+body{
+
+padding:40px;
+
+}
+
+.container{
+
+padding:40px;
+
+max-width:95%;
+
+}
+
+.cover{
+
+width:260px;
+
+height:260px;
+
+padding:12px;
+
+margin-bottom:30px;
+
+}
+
+h1{
+
+font-size:42px;
+
+margin-bottom:8px;
+
+}
+
+.artist{
+
+font-size:18px;
+
+margin-bottom:30px;
+
+}
+
+audio{
+
+margin-bottom:35px;
+
+}
+
+.lyrics{
+
+padding:30px;
+
+border-radius:20px;
+
+max-height:350px;
+
+font-size:17px;
+
+line-height:2;
+
+}
+
+.lyrics h2{
+
+font-size:24px;
+
+margin-bottom:16px;
+
+}
+
+.lyrics::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+footer{
+
+margin-top:35px;
+
+font-size:14px;
+
+}
 
 }
 
@@ -266,7 +432,8 @@ type="video/mp4">
 
 <img
 src="drake.jfif"
-class="cover">
+class="cover"
+alt="Cover">
 
 <h1>
 
@@ -356,7 +523,7 @@ You don't ever come to me, you don't ever come to me<br>
 Yeah<br>
 All she hit me with is come and see me for once<br>
 Come and see me for once<br>
-You don't ever come to me, you don't ever come to me<br>
+You don't ever come to me, you don't ever come to me
 
 </p>
 </div>
